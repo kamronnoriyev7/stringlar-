@@ -20,9 +20,6 @@
 //         }
 //     }
 // }
-using System;
-using System.Collections.Generic;
-
 // 2
 // public class Program
 // {
@@ -58,7 +55,6 @@ using System.Collections.Generic;
 //         }
 //     }
 // }
-
 // 3
 // public class Program
 // {
@@ -89,7 +85,6 @@ using System.Collections.Generic;
 //         }
 //     }
 // }
-
 // 4
 // public class Program
 // {
@@ -114,10 +109,7 @@ using System.Collections.Generic;
 //         }
 //     }
 // }
-
-
 // 5
-
 // public class Program
 // {
 //     public static void Main(string[] args)
@@ -158,7 +150,6 @@ using System.Collections.Generic;
 //         count=maxcount;
 //     }
 // }
-
 // 6 
 // public class Program
 // {
@@ -184,7 +175,6 @@ using System.Collections.Generic;
 //         }
 //     }
 // }
-
 // 1
 // public class Program
 // {
@@ -226,7 +216,6 @@ using System.Collections.Generic;
 //         }
 //     }
 // }
-
 // 2
 // public class Program
 // {
@@ -256,230 +245,77 @@ using System.Collections.Generic;
 //     }
 // }
 
+                               // HOMEWORK 1.5
+// 1
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("n: ");
+//         var countElement = int.Parse(Console.ReadLine());
+//         var array = new int[countElement];
+//         int Count ;
+//         Class3Search(array,out  Count);
+//         Console.WriteLine(Count);
+//     }
+//
+//     public static void Class3Search(int[] array , out int Count)
+//     {
+//         Count = 0;
+//         for (int i = 0; i < array.Length; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = int.Parse(Console.ReadLine());
+//             if (99<number && number<1000)
+//             {
+//                 ++Count;
+//             }
+//             array[i] = number;
+//         }
+//     }
+// }
+
+// 2
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("n: ");
+//         var countElement = int.Parse(Console.ReadLine());
+//         var array = new int[countElement];
+//         int evenNumberCount ;
+//         Class3Search(array,out  evenNumberCount);
+//         Console.WriteLine(evenNumberCount);
+//     }
+//
+//     public static void Class3Search(int[] array , out int evenNumberCount)
+//     {
+//         evenNumberCount = 0;
+//         for (int i = 0; i < array.Length; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = int.Parse(Console.ReadLine());
+//             if (number % 2 == 0)
+//             {
+//                 ++evenNumberCount;
+//             }
+//             array[i] = number;
+//         }
+//     }
+// }
+
 // 3
 public class Program
-{
+{ 
     public static void Main(string[] args)
     {
-        Console.Write("satr: ");
-        var text = Console.ReadLine();
-        char arrayText ;
-        ArrayLong(text, out arrayText);
-        Console.WriteLine($"natija: {arrayText}");
+        
     }
-
-    public static void ArrayLong(string text, out char arrayText)
+    public static void Test1()
     {
-        char[] arrayNew = new char[text.Length];
-        var SplitText = text.Split(" ");
-        for (int i = 0; i <SplitText.Length ; i++)
-        {
-            for (int j = 0; j <SplitText.Length; j++)
-            {
-                
-            }
-        }
-            
+                                       
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
