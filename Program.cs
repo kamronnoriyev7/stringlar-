@@ -185,23 +185,103 @@ using System.Collections.Generic;
 //     }
 // }
 
+// 1
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("satr1: ");
+//         var text1 = Console.ReadLine();
+//         Console.Write("satr2: ");
+//         var text2 = Console.ReadLine();
+//         bool boolText;
+//         Run(text1, text2, out boolText);
+//         Console.WriteLine(boolText);
+//     }
+//
+//     public static void Run(string text1, string text2, out bool boolText)
+//     {
+//         text1 = text1.Trim();
+//         text2 = text2.Trim();
+//         boolText = false;
+//         var count = 0;
+//         for (int i = 0; i < text1.Length; i++)
+//         {
+//             for (int j = 0; j < text2.Length; j++)
+//             {
+//                 if (text1[i]==text2[j])
+//                 {
+//                     ++count;
+//                 }
+//             }
+//
+//             if (count==text1.Length)
+//             {
+//                 boolText = true;
+//             }
+//             else
+//             {
+//                 boolText = false;
+//             }
+//         }
+//     }
+// }
+
+// 2
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("satr: ");
+//         var text = Console.ReadLine();
+//         string arrayText ;
+//         ArrayLong(text, out arrayText);
+//         Console.WriteLine($"natija: {arrayText}");
+//     }
+//
+//     public static void ArrayLong(string text, out string arrayText)
+//     {
+//         arrayText = "";
+//         var IntMax = int.MinValue;
+//         var textToArray = text.Split(" ");
+//         for (int i = 0; i <textToArray.Length; i++)
+//         {
+//             if (textToArray[i].Length > IntMax)
+//             {
+//                 IntMax = textToArray[i].Length; 
+//                 arrayText = textToArray[i];
+//             }
+//         }
+//         
+//     }
+// }
+
+// 3
 public class Program
 {
     public static void Main(string[] args)
     {
         Console.Write("satr: ");
-        var input = Console.ReadLine();
-         Console.Write("satr: ");
-        var input = Console.ReadLine();
-        
+        var text = Console.ReadLine();
+        char arrayText ;
+        ArrayLong(text, out arrayText);
+        Console.WriteLine($"natija: {arrayText}");
     }
 
-    public static void Run()
+    public static void ArrayLong(string text, out char arrayText)
     {
-        
+        char[] arrayNew = new char[text.Length];
+        var SplitText = text.Split(" ");
+        for (int i = 0; i <SplitText.Length ; i++)
+        {
+            for (int j = 0; j <SplitText.Length; j++)
+            {
+                
+            }
+        }
+            
     }
 }
-
 
 
 
