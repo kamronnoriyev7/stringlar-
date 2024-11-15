@@ -245,7 +245,7 @@
 //     }
 // }
 
-                               // HOMEWORK 1.5
+// HOMEWORK 1.5
 // 1
 // public class Program
 // {
@@ -305,17 +305,345 @@
 // }
 
 // 3
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("n: ");
+//         var countElement = int.Parse(Console.ReadLine());
+//         var array = new int[countElement];
+//         int oddNumberCount ;
+//         Class3Search(array,out  oddNumberCount);
+//         Console.WriteLine(oddNumberCount);
+//     }
+//
+//     public static void Class3Search(int[] array , out int oddNumberCount)
+//     {
+//         oddNumberCount = 0;
+//         for (int i = 0; i < array.Length; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = int.Parse(Console.ReadLine());
+//             if (number % 2 != 0)
+//             {
+//                 ++oddNumberCount;
+//             }
+//             array[i] = number;
+//         }
+//     }
+// }
+
+
+// 4
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("n: ");
+//         var countElement = int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         int NumberCount ;
+//         Class3Search(list,out  NumberCount, countElement);
+//         Console.WriteLine(NumberCount);
+//     }
+//
+//     public static void Class3Search(List<int> list, out int NumberCount, int countElement )
+//     {
+//         NumberCount = 0;
+//         for (int i = 0; i <countElement ; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = int.Parse(Console.ReadLine());
+//             list.Add(number);
+//             if (number%3==0 && number%7==0)
+//             {
+//                 ++NumberCount;
+//             }
+//             
+//         }
+//     }
+// }
+
+
+// 6
+
+using System.Net.Sockets;
+
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("n: ");
+//         var count = int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         Replacement(out list, count);
+//         foreach (var element in list)
+//         {
+//             Console.WriteLine(element);
+//         }
+//     }
+//
+//     public static void Replacement(out List<int> list, int count)
+//     {
+//         int digitFirst = 0;
+//         int digitLast = 0;
+//         list = new List<int>();
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = int.Parse(Console.ReadLine());
+//             list.Add(number);
+//         }
+//         (list[0], list[count - 1]) = (list[count - 1], list[0]);
+//     }
+// }
+
+// 7
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("n: ");
+//         var countElement = int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         var boolAlpha = Bool(list, countElement);
+//         Console.WriteLine(boolAlpha);
+//     }
+//
+//     public static bool Bool(List<int> list, int countElement)
+//     {
+//         var countEven = 0;
+//         var countOdd = 0;
+//         for (int i = 0; i < countElement; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var value = int.Parse(Console.ReadLine());
+//             list.Add(value);
+//             if (value % 2 == 0)
+//             {
+//                 countEven++;
+//             }
+//             else
+//             {
+//                 countOdd++;
+//             }
+//         }
+//
+//         if (countEven < countOdd)
+//         {
+//             return true;
+//         }
+//         else
+//         {
+//             return false;
+//         }
+//     }
+// }
+
+// 14
+// 
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.WriteLine("n: ");
+//         var count=int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         int minElement;
+//         MinElementSearch(list, out minElement, count);
+//         Console.WriteLine("Min Element: " + minElement);
+//
+//     }
+//
+//     public static void MinElementSearch(List<int> list,out int minElement, int count)
+//     {
+//         minElement = int.MaxValue;
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = int.Parse(Console.ReadLine());
+//             if (number<minElement)
+//             {
+//                 minElement=number;
+//             }
+//             list.Add(number);
+//         }
+//     }
+// }
+
+// 15
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.WriteLine("n: ");
+//         var count=int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         int minElement;
+//         int maxElement;
+//         MinElementSearch(list, out minElement, out maxElement, count);
+//         Console.WriteLine(maxElement + minElement);
+//
+//     }
+//
+//     public static void MinElementSearch(List<int> list,out int minElement,out int maxElement, int count)
+//     {
+//         minElement = int.MaxValue;
+//         maxElement = int.MinValue;
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = int.Parse(Console.ReadLine());
+//             if (number<minElement)
+//             {
+//                 minElement=number;
+//             }
+//
+//             if (number > maxElement)
+//             {
+//                 maxElement = number;
+//             }
+//             list.Add(number);
+//         }
+//     }
+// }
+
+// 21
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("satr: ");
+//         var count = int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         bool boolList;
+//         IncreasingOrDecreasing(list, out boolList, count);
+//         if (boolList,)
+//         {
+//         }
+//
+//         Console.WriteLine(boolList);
+//     }
+//
+//     public static void IncreasingOrDecreasing(List<int> list, out bool boolList, int count)
+//     {
+//         boolList = false;
+//         int minvalue = int.MaxValue;
+//         int maxvalue = int.MinValue;
+//         int countMin = 0;
+//         int countMax = 0;
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = Convert.ToInt32(Console.ReadLine());
+//             list.Add(number);
+//             if (number < minvalue)
+//             {
+//                 minvalue = number;
+//                 ++countMin;
+//             }
+//
+//             if (number > maxvalue)
+//             {
+//                 maxvalue = number;
+//                 ++countMax;
+//             }
+//         }
+//
+//         if (countMax == count)
+//         {
+//             boolList = true;
+//         }
+//
+//         else if (countMin == count)
+//         {
+//             boolList = false;
+//         }
+//         else
+//         {
+//             Console.WriteLine("Error");
+//         }
+//     }
+// }
+
+// 23
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("satr: ");
+//         var count = int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         MaxReplaceMin(out list, count);
+//         foreach (var element in list)
+//         {
+//             Console.WriteLine(element);
+//         }
+//     }
+//
+//     public static void MaxReplaceMin(out List<int> list, int count)
+//     {
+//         list = new List<int>();
+//         var maxValue = int.MinValue;
+//         int locationMax = 0;
+//         var minValue = int.MaxValue;
+//         int locationMin = 0;
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = Convert.ToInt32(Console.ReadLine());
+//             list.Add(number);
+//             if (number > maxValue)
+//             {
+//                 maxValue = number;
+//                 locationMax = i;
+//             }
+//
+//             if (number < minValue)
+//             {
+//                 minValue = number;
+//                 locationMin = i;
+//             }
+//         }
+//         list[locationMax] = minValue;
+//         list[locationMin] = maxValue;
+//     }
+// }
+
 public class Program
-{ 
+{
     public static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World!");
+    }
+
+    public static void SocketServer()
     {
         
     }
-    public static void Test1()
-    {
-                                       
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
