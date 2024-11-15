@@ -610,32 +610,392 @@ using System.Net.Sockets;
 //     }
 // }
 
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World!");
-    }
+// 25
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("satr: ");
+//         var count = int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         int index;
+//         MaxAdjecentToDisplay(list, out index, count);
+//         Console.WriteLine(list[index]);
+//         Console.WriteLine(list[index + 1]);
+//         
+//     }
+//
+//     public static void MaxAdjecentToDisplay(List<int> list, out int index, int count)
+//     {
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = Convert.ToInt32(Console.ReadLine());
+//             list.Add(number);
+//         }
+//
+//         index = 0;
+//         var maxValue = int.MinValue;
+//         for (int i = 0; i < count-1; i++)
+//         {
+//             if (list[i] + list[i + 1] > maxValue)
+//             {
+//                 maxValue = list[i] + list[i + 1];
+//                 index = i;
+//             }
+//         }
+//     }
+// }
 
-    public static void SocketServer()
-    {
-        
-    }
-}
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("satr: ");
+//         var count= int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         int maxLeftCount;
+//         MaxLeftAdjecent(list, count, out maxLeftCount);
+//         Console.WriteLine(maxLeftCount);
+//     }
+//     
+//     public static void MaxLeftAdjecent(List<int> list, int count,out int maxLeftCount)
+//     {
+//         maxLeftCount = 0;
+//         int maxLeft = 0;
+//         for (var i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = int.Parse(Console.ReadLine());
+//             list.Add(number);
+//             if (i==0)
+//             {
+//                  maxLeft = number;
+//             }
+//             if (number > maxLeft)
+//             {
+//                 maxLeft = number;
+//                 ++maxLeftCount;
+//             }
+//         }
+//     }
+// }
+
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("Enter count list: ");
+//         var count = Convert.ToInt32(Console.ReadLine());
+//         var list1 = new List<int>();
+//         var list2 = new List<int>();
+//         var list3 = new List<int>();
+//         NewList(list1, list2,out list3, count);
+//         foreach (var element in list3)
+//         {
+//             Console.WriteLine(element);
+//         }
+//     }
+//
+//     public static void NewList(List<int> list1, List<int> list2, out List<int> list3, int count)
+//     {
+//         list1 = new List<int>();
+//         list2 = new List<int>();
+//         list3 = new List<int>();
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number1 = Convert.ToInt32(Console.ReadLine());
+//             list1.Add(number1);
+//         }
+//
+//         Console.WriteLine();
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number2 = Convert.ToInt32(Console.ReadLine());
+//             list2.Add(number2);
+//         }
+//
+//         for (int i = 0; i <count; i++)
+//         {
+//             list3.Add(list1[i] * list2[i]);
+//         }
+//     }
+// }
+
+// 28
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("array length: ");
+//         var count = Convert.ToInt32(Console.ReadLine());
+//         var list = new List<string>();
+//         int countchar;
+//         SearchChar(list, out countchar, count);
+//         Console.WriteLine(countchar);
+//     }
+//
+//     public static void SearchChar(List<string> list, out int countchar, int count)
+//     {
+//         countchar = 0;
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var text = Console.ReadLine();
+//             list.Add(text);
+//         }
+//
+//         for (int i = 0; i < count; i++)
+//         {
+//             if (list[i][0]=='$')
+//             {
+//                 ++countchar;
+//             }
+//         }
+//     }
+// }
+
+// 29
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("array length: ");
+//         var count = Convert.ToInt32(Console.ReadLine());
+//         var list = new List<string>();
+//         SearchChar(list, count);
+//     }
+//
+//     public static void SearchChar(List<string> list,  int count)
+//     {
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var text = Console.ReadLine();
+//             list.Add(text);
+//         }
+//
+//         for (int i = 0; i < count; i++)
+//         {
+//             var countUpper = 0;
+//             for (int j = 0; j < list[i].Length; j++)
+//             {
+//                 if (char.IsUpper(list[i][j]))
+//                 {
+//                     ++countUpper;
+//                 }
+//             }
+//
+//             if (countUpper == list[i].Length)
+//             {
+//                 Console.WriteLine(list[i]);
+//             }
+//         }
+//     }
+// }
+
+// 30
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("Count list: ");
+//         var countList = int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         FirstEqualAgain(list, countList);
+//         foreach (var i in list)
+//         {
+//             Console.WriteLine(i);
+//         }
+//     }
+//
+//     public static void FirstEqualAgain(List<int> list, int countList)
+//     {
+//         var firstNumber = 0;
+//         var counter = 0;
+//         for (int i = 0; i < countList; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = int.Parse(Console.ReadLine());
+//             if (number%2==0 && counter==0)
+//             {
+//                 firstNumber=number;
+//                 ++counter;
+//             }
+//
+//             if (number%2==0)
+//             {
+//                 number += firstNumber;
+//             }
+//             list.Add(number);
+//         }
+//
+//     }
+// }
 
 
+// 31
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("Count list: ");
+//         var countList = int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         FirstEqualAgain(list, countList);
+//         foreach (var i in list)
+//         {
+//             Console.WriteLine(i);
+//         }
+//     }
+//
+//     public static void FirstEqualAgain(List<int> list, int countList)
+//     {
+//         var firstNumber = 0;
+//         for (int i = 0; i < countList; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = int.Parse(Console.ReadLine());
+//             if (number % 2 != 0)
+//             {
+//                 firstNumber = number;
+//             }
+//
+//             list.Add(number);
+//         }
+//
+//         for (int i = 0; i < countList; i++)
+//         {
+//             if (list[i]%2!=0)
+//             {
+//                 list[i]+= firstNumber;
+//             }
+//         }
+//     }
+// }
 
+// 32
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("Count list: ");
+//         var countList = int.Parse(Console.ReadLine());
+//         var list = new List<int>();
+//         FirstEqualAgain(list, countList);
+//         
+//     }
+//
+//     public static void FirstEqualAgain(List<int> list, int countList)
+//     {
+//         var min= int.MaxValue;
+//         for (int i = 0; i < countList; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var number = int.Parse(Console.ReadLine());
+//             if (i%2==0 && number<min )
+//             {
+//                 min = number;
+//             }
+//             list.Add(number);
+//         }
+//
+//         Console.WriteLine(min);
+//
+//     }
+// }
 
+// 33
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("Array elements count: ");
+//         var count = int.Parse(Console.ReadLine());
+//         var array1 = new int[count];
+//         var array2 = new int[count];
+//         int[] array3;
+//         NewArray(array1, array2, out array3, count);
+//         foreach (var element in array3)
+//         {
+//             Console.WriteLine(element);
+//         }
+//     }
+//
+//     public static void NewArray(int[] array1, int[] array2, out int[] array3, int count)
+//     {
+//         Console.WriteLine("Birinchi massiv elementlari: ");
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var digit1 = int.Parse(Console.ReadLine());
+//             array1[i] = digit1;
+//         }
+//
+//         Console.WriteLine();
+//         Console.WriteLine("Ikkinchi massiv elementlari: ");
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var digit2 = int.Parse(Console.ReadLine());
+//             array2[i] = digit2;
+//         }
+//
+//         Console.WriteLine();
+//         Console.WriteLine("Uchinchi massiv elementlari: ");
+//         array3 = new int[count];
+//         for (int i = 0; i < count; i++)
+//         {
+//             array3[i] = Math.Max(array1[i], array2[i]);
+//         }
+//     }
+// }
 
-
-
-
-
-
-
-
-
-
+// 34
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.Write("Array elements count: ");
+//         var count = int.Parse(Console.ReadLine());
+//         var array1 = new int[count];
+//         int[] array2;
+//         NewArray(array1, out array2, count);
+//         Console.WriteLine($"Array elements count: {array2.Length} ta ");
+//         foreach (var element in array2)
+//         {
+//             Console.WriteLine(element);
+//         }
+//     }
+//
+//     public static void NewArray(int[] array1, out int[] array2, int count)
+//     {
+//         var countArray = 0;
+//         Console.WriteLine("Birinchi massiv elementlari: ");
+//         for (int i = 0; i < count; i++)
+//         {
+//             Console.Write($"{i}: ");
+//             var digit1 = int.Parse(Console.ReadLine());
+//             if (digit1 % 2 == 0)
+//             {
+//                 ++countArray;
+//             }
+//
+//             array1[i] = digit1;
+//         }
+//         array2 = new int[countArray];
+//         for (int i = 0, j = 0; i < count || j < countArray ; i++)
+//         {
+//             if (array1[i] % 2 == 0)
+//             {
+//                 array2[j] = array1[i];
+//                 ++j;
+//             }
+//         }
+//     }
+// }
 
 
 
